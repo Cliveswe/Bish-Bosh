@@ -2,20 +2,22 @@
 document.getElementById('bishBoshForm').addEventListener('submit', function (event) {
     // Prevent the form from submitting.
     event.preventDefault();
-    // Get the values from the form.
-    const maxNumber = document.getElementById('maxNumber').value;
-    const bishNumber = document.getElementById('bishNumber').value;
-    const boshNumber = document.getElementById('boshNumbier').value;
 
+    // Get the values from the form.
+    const max = parseInt(document.getElementById('maxNumber').value, 10);
+    const bish = parseInt(document.getElementById('bishDivisor').value, 10);
+    const bosh = parseInt(document.getElementById('boshDivisor').value, 10);
+    // Output target.
     const output = document.getElementById('output');
+
     let number = ``;
 
-    for (let i = 1; i <= 100; i++) {
-        if (i % 3 === 0 && i % 4 === 0) {
+    for (let i = 1; i <= max; i++) {
+        if (i % bish === 0 && i % bosh === 0) {
             number += `Bish-Bosh, `;
-        } else if (i % 3 === 0) {
+        } else if (i % bish === 0) {
             number += `Bish, `;
-        } else if (i % 4 === 0) {
+        } else if (i % bosh === 0) {
             number += `Bosh, `;
         } else {
             number += `${i}, `
