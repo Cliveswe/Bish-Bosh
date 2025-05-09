@@ -8,6 +8,7 @@ document.getElementById('bishBoshForm').addEventListener('submit', function (eve
     const bish = parseInt(document.getElementById('bishDivisor').value, 10);
     const bosh = parseInt(document.getElementById('boshDivisor').value, 10);
     // Output target.
+    const error = document.getElementById('error');
     const output = document.getElementById('output');
 
     let number = ``;
