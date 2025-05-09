@@ -37,7 +37,7 @@ form.addEventListener('submit', function (event) {
 
 
     if (bish == bosh) {
-        error.textContent = `Bish and Bosh must be different numbers.\n`;
+        error.textContent = `Bish "${bish}" and Bosh "${bosh}" must be different numbers.\n`;
         return;
     }
 
