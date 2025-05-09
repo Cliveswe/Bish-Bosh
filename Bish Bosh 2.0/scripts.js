@@ -10,8 +10,11 @@ document.getElementById('bishBoshForm').addEventListener('submit', function (eve
     // Output target.
     const error = document.getElementById('error');
     const output = document.getElementById('output');
-
+    //Results 
     let number = ``;
+    let errorMessage= ``;
+//validation
+
 
     for (let i = 1; i <= max; i++) {
         if (i % bish === 0 && i % bosh === 0) {
