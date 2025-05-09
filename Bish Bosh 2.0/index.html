@@ -13,14 +13,12 @@
     </head>
 
     <body class="d-fex justify-content-center align-items-center">
+        <header class="header text-center py-2">
+            <h1>Welcome to Bish Bosh 2.0</h1>
+            <p>Here is a simple example of a number game called "Bish Bosh".</p>
+        </header>
+        <div class="container container-md mt-3 mb-3 py-2  border-2 rounded">
 
-        <div class="container container-md mt-3 mb-3 p-3 rounded">
-
-            <header class="header text-center">
-                <h1>Welcome to Bish Bosh 2.0</h1>
-                <p>Here is a simple example of a number game called "Bish Bosh".</p>
-            </header>
-            <hr>
             <main>
                 <!-- Information on how Bish Bosh number game. -->
                 <div class="row">
@@ -37,7 +35,7 @@
                     <div class="col-12">
                         If the number is evenly divisible by both 3 and 4, ‘Bish-Bosh’ is listed instead of the number.
                     </div>
-                    <div class="py-3">
+                    <div class=" col-12 py-3">
                         <form id="bishBoshForm" action="">
                             <div class="mb-3">
                                 <label for="number" class="form-label">Max number:</label>
@@ -60,32 +58,26 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Show results</button>
                         </form>
-                        <hr>
+                        
                     </div>
-                    <div class="col-12 error" id="error">
+                    <div class="col-12 text-danger" id="error">
                         <!-- Error message will be displayed here -->
                     </div>
                     <div class="col-12">
-                        Result:
+
+                        <div id="output"></div>
                     </div>
-                    <div class="col-12">
-                        <pre>
-                    <div id="output"></div>
-                    </pre>
-                        <hr>
-                    </div>
+<hr>
                 </div>
             </main>
-
-            <footer class="footer text-center">
-                <div class="row">
-                    <div class="col-12">
-                        <p>Copyright &copy; 2023 Clive Leddy</p>
-                    </div>
-            </footer>
         </div>
-
+        <footer class="footer text-center py-3">
+            <div class="container">
+                <span class="text-muted">Copyright &copy;2023 Clive Leddy</span>
+            </div>
+        </footer>
+        </div>
+        <script type="text/javascript" src="bishbosh.js"></script>
     </body>
-    <script src="bishbosh.js"></script>
 
 </html>

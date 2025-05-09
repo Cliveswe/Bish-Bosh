@@ -59,7 +59,8 @@ form.addEventListener('submit', function (event) {
 
 
     // Display the results of Bish Bosh 2.0.
-    output.textContent = number;
+    
+    output.textContent = `Results for numbers 1 to ${max}:\n\n` + number;
 
     //Reset the form on success.
     form.reset();
