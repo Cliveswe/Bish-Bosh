@@ -13,62 +13,69 @@
     </head>
 
     <body class="d-fex justify-content-center align-items-center">
-        <div class="container container-md border border-dark mt-3 p-3 rounded">
-            <h1>Welcome to Bish Bosh 2.0</h1>
-            <p>Here is a simple example of a number game called "Bish Bosh".</p>
-            <!-- Information on how Bish Bosh number game. -->
-            <div class="row">
-                <div class="col-12">
-                    Bish-Bosh lists all the numbers from 1 to ’Max number’, with some exceptions:
-                </div>
 
-                <div class="col-12">
-                    If the number is evenly divisible by 3, ‘Bish’ is listed instead of the number.
-                </div>
-                <div class="col-12">
-                    If the number is evenly divisible by 4, ‘Bosh’ is listed instead of the number.
-                </div>
-                <div class="col-12">
-                    If the number is evenly divisible by both 3 and 4, ‘Bish-Bosh’ is listed instead of the number.
-                </div>
-                <div class="py-3">
-                    <form id="bishBoshForm" action="">
-                        <div class="mb-3">
-                            <label for="number" class="form-label">Max number:</label>
-                            <input type="number" class="form-control" id="maxNumber" required>
-                            <div id="emailHelp" class="form-text">Enter a number greater than 1.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="number" class="form-label">Bish divisor:</label>
-                            <input type="number" class="form-control" id="bishDivisor" required>
-                            <div id="emailHelp" class="form-text">Enter a number greater than 1 but less than the above
-                                max number and not equal to Bosh.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="number" class="form-label">Bosh divisor:</label>
-                            <input type="number" class="form-control" id="boshDivisor" required>
-                            <div id="emailHelp" class="form-text">Enter a number greater than 1 but less than the above
-                                max number and not equal to Bish.</div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Show results</button>
-                    </form>
-                    <hr>
-                </div>
-                <div class="col-12 error" id="error">
-                    <!-- Error message will be displayed here -->
-                </div>
-                <div class="col-12">
-                    Result:
-                </div>
-                <div class="col-12">
-                    <pre>
+        <div class="container container-md border border-dark mt-3 p-3 rounded">
+
+            <header class="header text-center">
+                <h1>Welcome to Bish Bosh 2.0</h1>
+                <p>Here is a simple example of a number game called "Bish Bosh".</p>
+            </header>
+            <hr>
+            <main>
+                <!-- Information on how Bish Bosh number game. -->
+                <div class="row">
+                    <div class="col-12">
+                        Bish-Bosh lists all the numbers from 1 to ’Max number’, with some exceptions:
+                    </div>
+
+                    <div class="col-12">
+                        If the number is evenly divisible by 3, ‘Bish’ is listed instead of the number.
+                    </div>
+                    <div class="col-12">
+                        If the number is evenly divisible by 4, ‘Bosh’ is listed instead of the number.
+                    </div>
+                    <div class="col-12">
+                        If the number is evenly divisible by both 3 and 4, ‘Bish-Bosh’ is listed instead of the number.
+                    </div>
+                    <div class="py-3">
+                        <form id="bishBoshForm" action="">
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Max number:</label>
+                                <input type="number" class="form-control" id="maxNumber" required>
+                                <div id="emailHelp" class="form-text">Enter a number greater than 1.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Bish divisor:</label>
+                                <input type="number" class="form-control" id="bishDivisor" required>
+                                <div id="emailHelp" class="form-text">Enter a number greater than 1 but less than the
+                                    above
+                                    max number and not equal to Bosh.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="number" class="form-label">Bosh divisor:</label>
+                                <input type="number" class="form-control" id="boshDivisor" required>
+                                <div id="emailHelp" class="form-text">Enter a number greater than 1 but less than the
+                                    above
+                                    max number and not equal to Bish.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Show results</button>
+                        </form>
+                        <hr>
+                    </div>
+                    <div class="col-12 error" id="error">
+                        <!-- Error message will be displayed here -->
+                    </div>
+                    <div class="col-12">
+                        Result:
+                    </div>
+                    <div class="col-12">
+                        <pre>
                     <div id="output"></div>
                     </pre>
-                    <hr>
+                        <hr>
+                    </div>
                 </div>
-            </div>
-
-
+            </main>
         </div>
 
     </body>

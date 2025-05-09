@@ -35,12 +35,12 @@ form.addEventListener('submit', function (event) {
         return;
     }
 
-
     if (bish == bosh) {
         error.textContent = `Bish "${bish}" and Bosh "${bosh}" must be different numbers.\n`;
         return;
     }
 
+    // Calculation of Bish Bosh 2.0.
     for (let i = 1; i <= max; i++) {
         if (i % bish === 0 && i % bosh === 0) {
             number += `Bish-Bosh, `;
@@ -57,7 +57,7 @@ form.addEventListener('submit', function (event) {
 
     }
 
-   
+
     // Display the results of Bish Bosh 2.0.
     output.textContent = number;
 
