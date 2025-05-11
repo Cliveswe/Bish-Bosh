@@ -1,0 +1,15 @@
+body{
+    width: 100vw;
+}
+
+.container{
+ max-width: 600px;
+}
+
+footer{
+ background-color: #f1f1f1;
+}
+header{
+    background-color: #f1f1f1;
+   
+}
