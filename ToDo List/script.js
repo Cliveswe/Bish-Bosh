@@ -19,17 +19,16 @@ function addTodo() {
     item.className = 'list-group-item d-flex justify-content-between align-items-center';
     item.textContent = task;
 
-    item.appendChild(() => {
-        const removeTask = document.createElement('button');
-        removeTask.textContent = 'Remove';
-        removeTask.className = 'btn btn-danger btn-sm';
 
-        removeTask.addEventListener('click', () => {
-            item.remove();
-        });
-        input.appendChild(item);
-    });
+    const removeTask = document.createElement('button');
+    removeTask.textContent = 'Remove';
+    removeTask.className = 'btn btn-danger btn-sm';
 
+    removeTask.onclick = () => item.remove();
+
+
+    item.appendChild(removeTask);
+document.getElementById('todoList').appendChild(item);
 
     //Clear the input field
     input.value = '';
