@@ -14,6 +14,22 @@ function addTodo() {
         feedback.style.display = 'none';
     }
 
+    // Create a new list item
+    const item = document.createElement('li');
+    item.className = 'list-group-item d-flex justify-content-between align-items-center';
+    item.textContent = task;
+
+    item.appendChild(() => {
+        const removeTask = document.createElement('button');
+        removeTask.textContent = 'Remove';
+        removeTask.className = 'btn btn-danger btn-sm';
+
+        removeTask.addEventListener('click', () => {
+            item.remove();
+        });
+        input.appendChild(item);
+    });
+
 
     //Clear the input field
     input.value = '';
