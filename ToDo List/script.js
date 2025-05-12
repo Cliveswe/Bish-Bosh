@@ -20,7 +20,7 @@ function addTodo() {
     const item = document.createElement('li');
     item.className = 'list-group-item d-flex justify-content-between align-items-center';
     item.textContent = task;
-    //Create a remove button
+    //Create a remove button and style it.
     const removeTask = document.createElement('button');
     removeTask.textContent = 'Remove';
     removeTask.className = 'btn btn-danger btn-sm';
