@@ -28,7 +28,8 @@ function addTodo() {
 
 
     item.appendChild(removeTask);
-document.getElementById('todoList').appendChild(item);
+
+    document.getElementById('todoList').appendChild(item);
 
     //Clear the input field
     input.value = '';
