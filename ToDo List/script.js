@@ -18,17 +18,18 @@ function addTodo() {
     const item = document.createElement('li');
     item.className = 'list-group-item d-flex justify-content-between align-items-center';
     item.textContent = task;
-
-
+    //Create a remove button
     const removeTask = document.createElement('button');
     removeTask.textContent = 'Remove';
     removeTask.className = 'btn btn-danger btn-sm';
-
+    // Add an event listener to the remove button
+    // When clicked, remove the list item
     removeTask.onclick = () => item.remove();
 
-
+    // Add the remove button to the list item
     item.appendChild(removeTask);
-
+    
+    // Add the list item to the list
     document.getElementById('todoList').appendChild(item);
 
     //Clear the input field
