@@ -20,27 +20,24 @@
                 <div class="row">
                     <div class="col-12">
                         <hr>
-                        <div class="border border-dark rounded p-3"> <!-- Dark rounded container -->
-                            <!-- Input field for a ToDo task. -->
-                            <div class="input-group has-validation">
-                                <span class="input-group-text">ToDo</span>
-                                <div class="form-floating is-invalid">
-                                    <input type="text" class="form-control is-invalid" id="todoInput"
-                                        placeholder="Enter a task" required>
-                                    <label for="todoInput">New Task</label>
-                                </div>
-                                <div id="feedback" class="invalid-feedback">
-                                    Please enter a task.
-                                </div>
+                        <!-- Input field for a ToDo task. -->
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">ToDo</span>
+                            <div class="form-floating is-invalid">
+                                <input type="text" class="form-control is-invalid" id="todoInput"
+                                    placeholder="Enter a task" required>
+                                <label for="todoInput">New Task</label>
                             </div>
-
-                            <button class="btn btn-primary mt-2" onclick="addTodo()">Add Task</button>
-                            <ul id="todoList" class="mt-3 list-group"></ul>
-
+                            <div id="feedback" class="invalid-feedback">
+                                Please enter a task.
+                            </div>
                         </div>
+
+                        <button class="btn btn-primary mt-2" onclick="addTodo()">Add Task</button>
+                        <ul id="todoList" class="mt-3 list-group"></ul>
+
                     </div>
                 </div>
-
                 <script src="script.js"></script>
             </main>
         </div>
