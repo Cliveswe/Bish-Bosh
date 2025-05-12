@@ -1,6 +1,7 @@
 
 function addTodo() {
     const input = document.getElementById('todoInput');
+    //Remove any leading or trailing whitespace thus avoiding empty tasks from the list.
     const task = input.value.trim();
     const feedback = document.getElementById('feedback');
 
@@ -9,6 +10,7 @@ function addTodo() {
     if (task === '') {
         input.classList.add('is-invalid');
         feedback.style.display = 'block';
+        return;
     } else {
         input.classList.remove('is-invalid');
         feedback.style.display = 'none';
